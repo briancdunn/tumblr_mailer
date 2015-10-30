@@ -1,0 +1,1 @@
+Sends the contacts listed in friend_list.csv an email containing links to recent posts at my Tumblr blog.

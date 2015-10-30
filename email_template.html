@@ -8,7 +8,15 @@
     </p>
     <p>
       I've been blogging about my experiences at Fullstack on my blog. Check out my new posts here: 
-      <a href="http://briandunn.tumblr.com">My Blog</a>
+      <ul>
+        <% if(latestPosts.length > 0) {%>
+          <% for(var i=0; i<latestPosts.length; i++) {%>
+            <li><a href=<%= latestPosts[i].href %>> <%= latestPosts[i].title %></a>  </li>
+          <% } %>
+        <% } else {%>
+          <li><a href=http://briandunn.tumblr.com>My Tumblr Blog</a>  </li>
+        <% } %>
+      </ul>
     </p>
     <p>
       Talk soon,<br>
